@@ -25,7 +25,7 @@ export default function HomePage({ artist, topTracks, setPage }) {
             <div className="avatar-pulse" />
           </div>
           <div className="hero-text">
-            <p className="hero-tag">✦ Official Artist Page</p>
+            <p className="hero-tag">✦ Unofficial Artist Page</p>
             <h1 className="hero-name">RZEN</h1>
             <p className="hero-genres">{artist?.genres?.join(" · ") || "k-pop · hip-hop · edm · indie · acoustic"}</p>
             <p className="hero-bio">
