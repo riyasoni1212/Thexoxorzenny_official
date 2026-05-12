@@ -55,16 +55,16 @@ export const YOUTUBE_VIDEO_ID = "";
 // ─────────────────────────────────────────────────────────────────────
 // Add your upcoming music releases with release dates for countdown timers
 export const UPCOMING_RELEASES = [
-  // {
-  //   id: 1,
-  //   title: "COMING SOON",
-  //   type: "Single", // Single, EP, or Album
-  //   date: "2026-06-26", // Release date in YYYY-MM-DD format
-  //   cover: "", // Cover image URL (leave empty to use Spotify)
-  //   spotifyUrl: "COMING SOON", // Pre-save link
-  //   appleUrl: "COMING SOON", // Pre-add link
-  //   ytmusicUrl: "COMING SOON", // YouTube Music link
-  // },
+  {
+    id: 1,
+    title: "NEW SINGLE ANNOUCEMENT",
+    type: "Single", // Single, EP, or Album
+    date: "2026-05-26", // Release date in YYYY-MM-DD format
+    cover: "COMING SOON", // Cover image URL (leave empty to use Spotify)
+    spotifyUrl: "COMING SOON", // Pre-save link
+   appleUrl: "COMING SOON", // Pre-add link
+   ytmusicUrl: "COMING SOON", // YouTube Music link
+  },
 ];
 
 // ─────────────────────────────────────────────────────────────────────
