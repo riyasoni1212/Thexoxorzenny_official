@@ -60,7 +60,7 @@ export const UPCOMING_RELEASES = [
     title: "NEW SINGLE ANNOUCEMENT",
     type: "Single", // Single, EP, or Album
     date: "2026-05-26", // Release date in YYYY-MM-DD format
-    cover: "https://l.instagram.com/?u=https%3A%2F%2Fi.imgur.com%2FypuIaXX.jpeg&e=AUBM_VrFrCYdsDZzYAW_OJdV_LdtbboTXYP2BTARgbcIhj5K1and2ay87QQ_5OnzyghEJdm8UhGFKEp5oHO2SwHMX3fQpX3zPUrDL8-662UlwAwmymPXZm2TAY3KRkq6U0P72JA-uQmP", // Cover image URL (leave empty to use Spotify)
+    cover: "https://imgur.com/ypuIaXX?fbclid=PAVERFWARwMMVleHRuA2FlbQIxMABzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafmDwKJ9ZOYKvo5kcVqn15zGhaS7sXbI0jkW2h8rCG_ertIX3U4q16tNUyR0g_aem_K21hFS0T5gqkbMj07AtJuQ", // Cover image URL (leave empty to use Spotify)
     // spotifyUrl: "COMING SOON", // Pre-save link
   // appleUrl: "COMING SOON", // Pre-add link
  //  ytmusicUrl: "COMING SOON", // YouTube Music link
