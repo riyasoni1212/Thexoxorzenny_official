@@ -60,10 +60,10 @@ export const UPCOMING_RELEASES = [
     title: "NEW SINGLE ANNOUCEMENT",
     type: "Single", // Single, EP, or Album
     date: "2026-05-26", // Release date in YYYY-MM-DD format
-    cover: "COMING SOON", // Cover image URL (leave empty to use Spotify)
-    spotifyUrl: "COMING SOON", // Pre-save link
-   appleUrl: "COMING SOON", // Pre-add link
-   ytmusicUrl: "COMING SOON", // YouTube Music link
+    cover: "https://drive.google.com/file/d/1zc7-4EcRd5_n_kbs1b_IkZJnS6oT8Ggc/view?usp=drivesdk", // Cover image URL (leave empty to use Spotify)
+    // spotifyUrl: "COMING SOON", // Pre-save link
+  // appleUrl: "COMING SOON", // Pre-add link
+ //  ytmusicUrl: "COMING SOON", // YouTube Music link
   },
 ];
 
