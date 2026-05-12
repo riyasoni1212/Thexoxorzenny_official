@@ -57,13 +57,13 @@ export const YOUTUBE_VIDEO_ID = "";
 export const UPCOMING_RELEASES = [
   // {
   //   id: 1,
-  //   title: "Your Song Title",
+  //   title: "COMING SOON",
   //   type: "Single", // Single, EP, or Album
-  //   date: "2026-06-01", // Release date in YYYY-MM-DD format
+  //   date: "2026-06-26", // Release date in YYYY-MM-DD format
   //   cover: "", // Cover image URL (leave empty to use Spotify)
-  //   spotifyUrl: "", // Pre-save link
-  //   appleUrl: "", // Pre-add link
-  //   ytmusicUrl: "", // YouTube Music link
+  //   spotifyUrl: "COMING SOON", // Pre-save link
+  //   appleUrl: "COMING SOON", // Pre-add link
+  //   ytmusicUrl: "COMING SOON", // YouTube Music link
   // },
 ];
 
@@ -71,10 +71,8 @@ export const UPCOMING_RELEASES = [
 // 🌐 SOCIAL MEDIA LINKS
 // ─────────────────────────────────────────────────────────────────────
 export const SOCIAL_LINKS = {
-  instagram: "https://instagram.com/rzen",
-  twitter: "https://twitter.com/rzen",
-  tiktok: "https://tiktok.com/@rzen",
-  youtube: "https://youtube.com/@rzen",
+  instagram: "https://www.instagram.com/thexoxorzenny_officiall?igsh=MWVmazhoNGM1aDJmdw%3D%3D&utm_source=qr",
+  youtube: "https://youtube.com/@thexoxorzenny_official?si=xBOo2zrCwpXQNkpX",
   spotify: "https://open.spotify.com/artist/51mBnXuigxNHmmUenHJpND",
   appleMusic: "https://music.apple.com/us/artist/rzen/1493662188",
 };
@@ -83,8 +81,8 @@ export const SOCIAL_LINKS = {
 // 📧 CONTACT EMAILS
 // ─────────────────────────────────────────────────────────────────────
 export const CONTACT_EMAILS = {
-  primary: "contact@rzenmusic.com",
-  // secondary: "bookings@rzenmusic.com",
+  primary: "rzen.music@gmail.com",
+  // secondary: "thexoxorzenny.official@gmail.com",
 };
 
 // ─────────────────────────────────────────────────────────────────────
@@ -93,8 +91,8 @@ export const CONTACT_EMAILS = {
 // Control which sections appear on your website
 export const DISPLAY_OPTIONS = {
   showStats: true,          // Show follower count, popularity on hero
-  showLatestVideo: false,    // Show YouTube video on homepage
-  showCountdown: false,     // Show countdown to next release
+  showLatestVideo: true,    // Show YouTube video on homepage
+  showCountdown: true,     // Show countdown to next release
   showFeaturedTracks: true,  // Show top tracks on homepage
   showLatestRelease: true,      // Show latest release section
   showChat: false,          // Show chat box on about page
