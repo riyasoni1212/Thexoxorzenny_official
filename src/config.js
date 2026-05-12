@@ -48,7 +48,7 @@ export const APPLE_MUSIC_URL = STREAMING_LINKS.appleMusic;
 // ─────────────────────────────────────────────────────────────────────
 // 📺 YOUTUBE VIDEO
 // ─────────────────────────────────────────────────────────────────────
-export const YOUTUBE_VIDEO_ID = "";
+export const YOUTUBE_VIDEO_ID = "https://youtu.be/RZKk2bK5BgE?si=YO8GF3W_A6pVV4HB";
 
 // ─────────────────────────────────────────────────────────────────────
 // 📅 UPCOMING RELEASES
@@ -60,7 +60,7 @@ export const UPCOMING_RELEASES = [
     title: "NEW SINGLE ANNOUCEMENT",
     type: "Single", // Single, EP, or Album
     date: "2026-05-26", // Release date in YYYY-MM-DD format
-    cover: "https://drive.google.com/file/d/1zc7-4EcRd5_n_kbs1b_IkZJnS6oT8Ggc/view?usp=drivesdk", // Cover image URL (leave empty to use Spotify)
+    cover: "https://l.instagram.com/?u=https%3A%2F%2Fi.imgur.com%2FypuIaXX.jpeg&e=AUBM_VrFrCYdsDZzYAW_OJdV_LdtbboTXYP2BTARgbcIhj5K1and2ay87QQ_5OnzyghEJdm8UhGFKEp5oHO2SwHMX3fQpX3zPUrDL8-662UlwAwmymPXZm2TAY3KRkq6U0P72JA-uQmP", // Cover image URL (leave empty to use Spotify)
     // spotifyUrl: "COMING SOON", // Pre-save link
   // appleUrl: "COMING SOON", // Pre-add link
  //  ytmusicUrl: "COMING SOON", // YouTube Music link
