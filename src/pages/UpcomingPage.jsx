@@ -1,4 +1,4 @@
-import { Cover, SpotifyIcon, AppleMusicIcon, YouTubeMusicIcon, Countdown } from "../components/Common";
+import { Cover, SpotifyIcon, AppleMusicIcon, YouTubeMusicIcon, Countdown, RealismButton } from "../components/Common";
 import { useData } from "../context/DataContext";
 
 export default function UpcomingPage() {
@@ -40,15 +40,15 @@ export default function UpcomingPage() {
                   <Countdown targetDate={release.date} />
                 </div>
                 <div style={{ display: "flex", gap: 8, marginTop: 16, flexWrap: "wrap" }}>
-                  <a href={release.spotifyUrl} target="_blank" rel="noreferrer" className="spotify-btn">
+                  <RealismButton href={release.spotifyUrl} target="_blank" rel="noreferrer" theme="spotify">
                     <SpotifyIcon size={16} /> Spotify
-                  </a>
-                  <a href={release.appleUrl} target="_blank" rel="noreferrer" className="spotify-btn" style={{ background: "#FA243C" }}>
+                  </RealismButton>
+                  <RealismButton href={release.appleUrl} target="_blank" rel="noreferrer" theme="apple">
                     <AppleMusicIcon size={16} /> Apple Music
-                  </a>
-                  <a href={release.ytmusicUrl} target="_blank" rel="noreferrer" className="spotify-btn" style={{ background: "#FF0000" }}>
+                  </RealismButton>
+                  <RealismButton href={release.ytmusicUrl} target="_blank" rel="noreferrer" theme="yt">
                     <YouTubeMusicIcon size={16} /> YouTube Music
-                  </a>
+                  </RealismButton>
                 </div>
               </div>
             </div>

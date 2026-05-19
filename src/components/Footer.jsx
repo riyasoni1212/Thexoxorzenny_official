@@ -8,7 +8,7 @@ export default function Footer({ setPage, onAdminClick }) {
     <footer className="footer">
       <div className="footer-inner">
         <button className="nav-logo" onClick={() => setPage("home")} style={{ marginBottom: 12 }}>
-          <MusicWave size={16} /> <span>{ARTIST_NAME}</span>
+          <MusicWave size={16} /> <span className="rzen-wordmark nav-wordmark">{ARTIST_NAME}</span>
         </button>
         <div className="footer-links">
           {pages.map(p => (

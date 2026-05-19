@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useSpotify } from "./hooks/useSpotify";
 import Style from "./components/Style";
 import { AnimatedBg, LoadingScreen, ApiNotice } from "./components/Common";
@@ -13,9 +13,15 @@ import AboutPage from "./pages/AboutPage";
 
 export default function App() {
   const [page, setPage] = useState("home");
+  const [introDone, setIntroDone] = useState(false);
   const { artist, topTracks, albums, loading } = useSpotify();
 
-  if (loading) return (
+  useEffect(() => {
+    const timer = window.setTimeout(() => setIntroDone(true), 1800);
+    return () => window.clearTimeout(timer);
+  }, []);
+
+  if (loading || !introDone) return (
     <>
       <Style />
       <AnimatedBg />

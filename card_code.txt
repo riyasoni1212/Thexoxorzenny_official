@@ -1,0 +1,44 @@
+<USER_REQUEST>
+import React from 'react';
+import styled from 'styled-components';
+
+const Card = () => {
+  return (
+    <StyledWrapper>
+      <div className="outer">
+        <div className="dot" />
+        <div className="card">
+          <div className="ray" />
+          <div className="text">750k</div>
+          <div>Views</div>
+          <div className="line topl" />
+          <div className="line leftl" />
+          <div className="line bottoml" />
+          <div className="line rightl" />
+        </div>
+      </div>
+    </StyledWrapper>
+  );
+}
+
+const StyledWrapper = styled.div`
+  .outer {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    padding: 1px;
+    background: radial-gradient(circle 230px at 0% 0%, #ffffff, #0c0d0d);
+    position: relative;
+  }
+
+  .dot {
+    width: 5px;
+    aspect-ratio: 1;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px #ffffff;
+    border-radius: 100px;
+    z-index: 2;
+    right: 10%;
+    top: 10%;
+<truncated 2467 bytes>

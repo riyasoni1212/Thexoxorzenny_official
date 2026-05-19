@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Cover, SpotifyIcon, AppleMusicIcon, YouTubeMusicIcon, EmptyState } from "../components/Common";
+import { Cover, SpotifyIcon, AppleMusicIcon, YouTubeMusicIcon, EmptyState, RealismButton } from "../components/Common";
 
 // ─── ALBUMS PAGE ──────────────────────────────────────────────────────────────
 export default function AlbumsPage({ albums }) {
@@ -14,16 +14,27 @@ export default function AlbumsPage({ albums }) {
       <h3 className="albums-section-label">{label}</h3>
       <div className="albums-grid">
         {items.map(a => (
-          <button key={a.id} className="album-card" onClick={() => setSelected(a)}>
-            <div className="album-card-cover">
-              <Cover url={a.images?.[0]?.url} name={a.name} size={180} radius={12} />
-              <div className="album-card-overlay">
-                <SpotifyIcon size={32} />
-              </div>
+          <div key={a.id} className="neon-wrap">
+            <div className="album-card-wrapper">
+              <button className="album-card" onClick={() => setSelected(a)}>
+                <div className="album-card-cover">
+                  <Cover url={a.images?.[0]?.url} name={a.name} size={150} radius={12} />
+                  <div className="album-card-overlay">
+                    <SpotifyIcon size={32} />
+                  </div>
+                </div>
+                <div className="content-box">
+                  <span className="card-title">{a.name}</span>
+                  <p className="card-content">{a.release_date?.slice(0, 4)} · {a.total_tracks} tracks</p>
+                  <span className="see-more">View Album</span>
+                </div>
+                <div className="date-box">
+                  <span className="month">YEAR</span>
+                  <span className="date">{a.release_date?.slice(0, 4)}</span>
+                </div>
+              </button>
             </div>
-            <p className="album-card-name">{a.name}</p>
-            <p className="album-card-meta">{a.release_date?.slice(0, 4)} · {a.total_tracks} tracks</p>
-          </button>
+          </div>
         ))}
       </div>
     </div>
@@ -55,15 +66,15 @@ export default function AlbumsPage({ albums }) {
               <h2 className="modal-title">{selected.name}</h2>
               <p className="modal-meta">{selected.release_date} · {selected.total_tracks} tracks</p>
               <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 20 }}>
-                <a href={selected.external_urls?.spotify} target="_blank" rel="noreferrer" className="spotify-btn">
+                <RealismButton href={selected.external_urls?.spotify} target="_blank" rel="noreferrer" theme="spotify">
                   <SpotifyIcon size={16} /> Spotify
-                </a>
-                <a href={`https://music.apple.com/search?term=${encodeURIComponent(selected.name)}`} target="_blank" rel="noreferrer" className="spotify-btn" style={{ background: "#FA243C" }}>
+                </RealismButton>
+                <RealismButton href={`https://music.apple.com/search?term=${encodeURIComponent(selected.name)}`} target="_blank" rel="noreferrer" theme="apple">
                   <AppleMusicIcon size={16} /> Apple Music
-                </a>
-                <a href={`https://music.youtube.com/search?q=${encodeURIComponent(selected.name)}`} target="_blank" rel="noreferrer" className="spotify-btn" style={{ background: "#FF0000" }}>
+                </RealismButton>
+                <RealismButton href={`https://music.youtube.com/search?q=${encodeURIComponent(selected.name)}`} target="_blank" rel="noreferrer" theme="yt">
                   <YouTubeMusicIcon size={16} /> YouTube Music
-                </a>
+                </RealismButton>
               </div>
             </div>
           </div>

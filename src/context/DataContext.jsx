@@ -6,6 +6,7 @@ const DataContext = createContext();
 export function DataProvider({ children }) {
   const [releases, setReleases] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [activeTrackId, setActiveTrackId] = useState(null);
 
   useEffect(() => {
     // Load upcoming releases from config
@@ -14,7 +15,7 @@ export function DataProvider({ children }) {
   }, []);
 
   return (
-    <DataContext.Provider value={{ releases, loading }}>
+    <DataContext.Provider value={{ releases, loading, activeTrackId, setActiveTrackId }}>
       {children}
     </DataContext.Provider>
   );
