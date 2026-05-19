@@ -57,7 +57,7 @@ export const YOUTUBE_VIDEO_ID = "https://youtu.be/RZKk2bK5BgE?si=YO8GF3W_A6pVV4H
 export const UPCOMING_RELEASES = [
   {
     id: 1,
-    title: "NEW SINGLE ANNOUCEMENT",
+    title: "NEW SINGLE ANNOUNCEMENT",
     type: "Single", // Single, EP, or Album
     date: "2026-05-26", // Release date in YYYY-MM-DD format
     //cover: "https://imgur.com/ypuIaXX?fbclid=PAVERFWARwMMVleHRuA2FlbQIxMABzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafmDwKJ9ZOYKvo5kcVqn15zGhaS7sXbI0jkW2h8rCG_ertIX3U4q16tNUyR0g_aem_K21hFS0T5gqkbMj07AtJuQ", // Cover image URL (leave empty to use Spotify)

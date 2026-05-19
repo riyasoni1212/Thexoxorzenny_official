@@ -1,5 +1,6 @@
 // ─── MUSIC WAVE ───────────────────────────────────────────────────────────────
 import { useState, useEffect } from "react";
+import InteractivePlatinumBg from "./InteractivePlatinumBg";
 
 export function MusicWave({ playing = true, size = 24 }) {
   return (
@@ -36,7 +37,7 @@ export function Cover({ url, name, size = 60, radius = 8 }) {
 export function SpotifyIcon({ size = 18 }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+      <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424c-.18.295-.563.387-.857.207-2.35-1.438-5.305-1.764-8.785-.97-.337.078-.67-.133-.747-.47-.077-.337.133-.67.47-.747 3.81-.87 7.077-.5 9.71 1.114.294.18.385.563.208.857zm1.224-2.723c-.226.367-.707.487-1.074.26-2.69-1.654-6.79-2.134-9.97-1.17-.413.125-.845-.107-.97-.52-.125-.413.107-.845.52-.97 3.633-1.102 8.147-.568 11.233 1.328.368.226.488.707.261 1.072zm.105-2.833C14.838 8.92 9.07 8.73 5.736 9.742c-.513.156-1.05-.133-1.206-.646-.156-.513.133-1.05.646-1.206 3.84-1.163 10.214-.94 13.84 1.214.46.273.61.87.337 1.33-.274.46-.87.61-1.33.337z" />
     </svg>
   );
 }
@@ -45,7 +46,7 @@ export function SpotifyIcon({ size = 18 }) {
 export function AppleMusicIcon({ size = 18 }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
-      <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+      <path d="M21 2.253a.75.75 0 0 0-.964-.717L7.536 5.088A2.25 2.25 0 0 0 6 7.252v7.712a3.75 3.75 0 1 0 1.5 3v-9.664l12-3.327v6.62a3.75 3.75 0 1 0 1.5 3v-6.937z" />
     </svg>
   );
 }
@@ -54,7 +55,7 @@ export function AppleMusicIcon({ size = 18 }) {
 export function YouTubeMusicIcon({ size = 18 }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.65 10.65l-2.5 1.5-1.65-1.04V13.5l2.5-1.5 1.65 1.04V12.65zm-5 0l-2.5 1.5-1.65-1.04V8.5l2.5-1.5 1.65 1.04V7.65z"/>
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 14.5c-2.48 0-4.5-2.02-4.5-4.5S9.52 7.5 12 7.5s4.5 2.02 4.5 4.5-2.02 4.5-4.5 4.5zm0-7.5c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3zm-1 4.5v-3l2.5 1.5-2.5 1.5z" />
     </svg>
   );
 }
@@ -71,23 +72,23 @@ export function YouTubeIcon({ size = 18 }) {
 // ─── STREAMING BUTTONS ───────────────────────────────────────────────────────
 export function StreamingButtons({ spotifyUrl, appleUrl, ytmusicUrl, small }) {
   const size = small ? 14 : 18;
-  const btnStyle = small ? { padding: "8px 12px", fontSize: 12 } : {};
+  const buttonSize = small ? "small" : "normal";
   return (
     <div className="streaming-buttons" style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
       {spotifyUrl && (
-        <a href={spotifyUrl} target="_blank" rel="noreferrer" className="spotify-btn" style={btnStyle}>
+        <RealismButton href={spotifyUrl} target="_blank" rel="noreferrer" size={buttonSize} theme="spotify">
           <SpotifyIcon size={size} /> {small ? "" : "Spotify"}
-        </a>
+        </RealismButton>
       )}
       {appleUrl && (
-        <a href={appleUrl} target="_blank" rel="noreferrer" className="streaming-btn apple-btn" style={btnStyle}>
+        <RealismButton href={appleUrl} target="_blank" rel="noreferrer" size={buttonSize} theme="apple">
           <AppleMusicIcon size={size} /> {small ? "" : "Apple Music"}
-        </a>
+        </RealismButton>
       )}
       {ytmusicUrl && (
-        <a href={ytmusicUrl} target="_blank" rel="noreferrer" className="streaming-btn ytmusic-btn" style={btnStyle}>
+        <RealismButton href={ytmusicUrl} target="_blank" rel="noreferrer" size={buttonSize} theme="yt">
           <YouTubeMusicIcon size={size} /> {small ? "" : "YouTube Music"}
-        </a>
+        </RealismButton>
       )}
     </div>
   );
@@ -167,11 +168,9 @@ export function EmptyState({ message }) {
 export function AnimatedBg() {
   return (
     <div style={{ position: "fixed", inset: 0, zIndex: 0, overflow: "hidden", pointerEvents: "none" }}>
-      <div className="orb orb1" />
-      <div className="orb orb2" />
-      <div className="orb orb3" />
-      <div className="grid-lines" />
-      <div className="scanline" />
+      <div style={{ position: "absolute", inset: 0, pointerEvents: "auto" }}>
+        <InteractivePlatinumBg />
+      </div>
     </div>
   );
 }
@@ -180,11 +179,35 @@ export function AnimatedBg() {
 export function LoadingScreen() {
   return (
     <div className="loading-screen">
-      <div className="loading-logo">
-        <MusicWave size={48} />
-        <span>RZEN</span>
+      <div className="loading-orbit" aria-hidden="true">
+        <span className="loading-ring loading-ring-one" />
+        <span className="loading-ring loading-ring-two" />
+        <span className="loading-ring loading-ring-three" />
       </div>
-      <p>Loading your experience...</p>
+      <div className="loading-notes" aria-hidden="true">
+        <span>♪</span>
+        <span>♬</span>
+        <span>♫</span>
+        <span>♩</span>
+      </div>
+      <div className="loading-logo" aria-label="Loading RZEN">
+        <MusicWave size={48} />
+        <span className="rzen-wordmark loading-wordmark">RZEN</span>
+      </div>
+      <div className="loading-eq" aria-hidden="true">
+        <span />
+        <span />
+        <span />
+        <span />
+        <span />
+        <span />
+        <span />
+        <span />
+      </div>
+      <div className="loading-bar" aria-hidden="true">
+        <span />
+      </div>
+      <p className="loading-copy">Tuning the vibe...</p>
     </div>
   );
 }
@@ -207,3 +230,131 @@ export function ApiNotice() {
     </div>
   );
 }
+
+// ─── REALISM BUTTON ───────────────────────────────────────────────────────────
+export function RealismButton({ href, onClick, target, rel, className, style, children, size = "normal", theme = "", ...rest }) {
+  const content = (
+    <>
+      <div className="blob1" />
+      <div className="blob2" />
+      <div className="inner">{children}</div>
+    </>
+  );
+
+  const themeClass = theme ? `${theme}-theme` : "";
+  const fullClassName = `realism-btn ${size} ${themeClass} ${className || ""}`;
+
+  if (href) {
+    return (
+      <a href={href} target={target} rel={rel} className={fullClassName} style={style} {...rest}>
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <button onClick={onClick} className={fullClassName} style={style} type="button" {...rest}>
+      {content}
+    </button>
+  );
+}
+
+// ─── GLASS CARD STACK ──────────────────────────────────────────────────────────
+export function GlassCardStack({ spotifyUrl, appleUrl, ytmusicUrl }) {
+  return (
+    <div className="glass-card-container">
+      {spotifyUrl && (
+        <a
+          href={spotifyUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="glass-card spotify-card"
+          style={{ "--r": -15 }}
+          data-text="Spotify"
+        >
+          <SpotifyIcon size={48} />
+        </a>
+      )}
+      {appleUrl && (
+        <a
+          href={appleUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="glass-card apple-card"
+          style={{ "--r": 5 }}
+          data-text="Apple Music"
+        >
+          <AppleMusicIcon size={48} />
+        </a>
+      )}
+      {ytmusicUrl && (
+        <a
+          href={ytmusicUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="glass-card yt-card"
+          style={{ "--r": 25 }}
+          data-text="YouTube Music"
+        >
+          <YouTubeMusicIcon size={48} />
+        </a>
+      )}
+    </div>
+  );
+}
+
+// ─── NAV NAVIGATION ICONS ──────────────────────────────────────────────────
+export function HomeIcon({ size = 16, className = "" }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} style={{ display: "inline-block", verticalAlign: "middle" }}>
+      <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+      <polyline points="9 22 9 12 15 12 15 22" />
+    </svg>
+  );
+}
+
+export function MusicIcon({ size = 16, className = "" }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} style={{ display: "inline-block", verticalAlign: "middle" }}>
+      <path d="M9 18V5l12-2v13" />
+      <circle cx="6" cy="18" r="3" />
+      <circle cx="18" cy="16" r="3" />
+    </svg>
+  );
+}
+
+export function AlbumsIcon({ size = 16, className = "" }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} style={{ display: "inline-block", verticalAlign: "middle" }}>
+      <circle cx="12" cy="12" r="10" />
+      <circle cx="12" cy="12" r="6" />
+      <circle cx="12" cy="12" r="2" />
+    </svg>
+  );
+}
+
+export function UpcomingIcon({ size = 16, className = "" }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} style={{ display: "inline-block", verticalAlign: "middle" }}>
+      <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+      <path d="M16 2v4" />
+      <path d="M8 2v4" />
+      <path d="M3 10h18" />
+      <path d="M8 14h.01" />
+      <path d="M12 14h.01" />
+      <path d="M16 14h.01" />
+      <path d="M8 18h.01" />
+      <path d="M12 18h.01" />
+    </svg>
+  );
+}
+
+export function AboutIcon({ size = 16, className = "" }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} style={{ display: "inline-block", verticalAlign: "middle" }}>
+      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+      <circle cx="12" cy="7" r="4" />
+    </svg>
+  );
+}
+
